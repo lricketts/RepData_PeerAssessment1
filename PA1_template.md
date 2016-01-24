@@ -224,12 +224,12 @@ contains the maximum number of steps?
 
 ```r
 #Calculate interval with greatest average steps taken
-maxinterval <- intervals$interval[max(intervals$avgsteps)]
+maxinterval <- intervals$interval[which.max(intervals$avgsteps)]
 print(maxinterval)
 ```
 
 ```
-## [1] 1705
+## [1] 835
 ```
 
 ### Imputing missing values
