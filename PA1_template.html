@@ -418,11 +418,11 @@ contains the maximum number of steps?</li>
 </ol>
 
 <pre><code class="r">#Calculate interval with greatest average steps taken
-maxinterval &lt;- intervals$interval[max(intervals$avgsteps)]
+maxinterval &lt;- intervals$interval[which.max(intervals$avgsteps)]
 print(maxinterval)
 </code></pre>
 
-<pre><code>## [1] 1705
+<pre><code>## [1] 835
 </code></pre>
 
 <h3>Imputing missing values</h3>
